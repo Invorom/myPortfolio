@@ -136,5 +136,11 @@ function animation()
     connectParticles();
 }
 
+// Launch the script
 createParticles();
 animation();
+
+function test(){
+    let test2= document.getElementById("about");
+    test2.textContent = "ouais" 
+}
