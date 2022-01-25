@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#canvas1{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgb(0,0,0), rgb(6,61,62)100%);
+    position: fixed;
+    z-index: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header, main, footer{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 10;
+}
+
+button{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    background-color: rgba(6, 255, 255, 0.5);
+    color: black;
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+}
+
+button:hover{
+    background-color: rgba(6, 255, 255, 1);
+    transform: scale(1.2)
+}
+
+h1, h2{
+    color: white;
+}
