@@ -1,4 +1,4 @@
-const canvas = document.getElementById("canvas1");
+const canvas = document.getElementById("canvasBlue");
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -137,10 +137,31 @@ function animation()
 }
 
 // Launch the script
-createParticles();
-animation();
+function launchParticles()
+{
+    createParticles();
+    animation();
+}
+launchParticles();
 
-function test(){
-    let test2= document.getElementById("about");
-    test2.textContent = "ouais" 
+// Change the pause button state
+let changeImage = 1;
+function changePauseImage()
+{
+    let colorCanvasB = document.getElementById("canvasBlue");
+    let colorCanvasR = document.getElementById("canvasRed");
+    if(changeImage == 0)
+    {
+        document.getElementById("pause").src="pictures/logos/pausedButton.png"
+        changeImage = 1;
+        colorCanvasR.id = "canvasBlue";
+        return;
+    }
+    if(changeImage == 1)
+    {
+        document.getElementById("pause").src="pictures/logos/unpauseButton.png"
+        changeImage = 0;
+        colorCanvasB.id = "canvasRed";
+        return;
+    }
 }
