@@ -25,60 +25,76 @@
     z-index: 0;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    height: 100%;
 }
 
-header, footer{
-    display: flex;
-    width: 75%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    z-index: 10;
-    padding: 1em;
-}
-
-main{
+header{
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: start;
+    justify-content: flex-end;
+    z-index: 10;
+    padding: 1em;
+}
+header h1{
+    white-space:nowrap;
+}
+#logo{
+    margin-bottom: 40%;
+}
+
+main{
+    display: flex;
+    width: 170%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    z-index: 10;
+    padding: 1em;
+    font-size: 25px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
     z-index: 10;
     padding: 1em;
 }
 
-header #mode{
-    align-self: flex-end;
-    z-index: 11;
-}
-
 #darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5{
     display: flex;
-    width: 25%;
+    width: 40%;
     justify-content: center;
+    align-items: center;
     background-color: rgba(6, 255, 255, 0.5);
     color: rgb(0, 0, 0);
     font-size: 25px;
     transition: all .2s ease-in-out;
     padding: 1em 1em;
-    margin: 3px;
+    margin: 2%;
     border-color: rgb(0, 0, 0);
     box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
 }
 
 #clearButton1, #clearButton2, #clearButton3, #clearButton4, #clearButton5{
     display: flex;
-    width: 25%;
+    width: 40%;
     justify-content: center;
+    align-items: center;
     background-color: rgba(6, 255, 255, 0.5);
     color: rgb(255,255,255);
     font-size: 25px;
     transition: all .2s ease-in-out;
     padding: 1em 1em;
-    margin: 3px;
+    margin: 2%;
     border-color: rgb(255,255,255);
     box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
 }
@@ -99,8 +115,7 @@ h1, h2{
 
 #mode{
     display: flex;
-    width: 10%;
-    size: 50%;
+    width: 100%;
     transition: all .2s ease-in-out;
 }
 
