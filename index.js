@@ -10,7 +10,7 @@ let mouse =
 {
     x: null,
     y: null,
-    radius: (canvas.height/130) * (canvas.height/130)
+    radius: (canvas.height/110) * (canvas.height/110)
 }
 
 window.addEventListener('mousemove',
@@ -150,18 +150,22 @@ function changePauseImage()
 {
     let colorCanvasD = document.getElementById("darkCanvas");
     let colorCanvasC = document.getElementById("clearCanvas");
+    let colorButtonD = document.getElementById("darkButton");
+    let colorButtonC = document.getElementById("clearButton");
     if(changeImage == 0)
     {
         document.getElementById("pause").src="pictures/logos/iconMoon.png"
         changeImage = 1;
         colorCanvasD.id = "clearCanvas";
+        colorButtonD.id = "clearButton";
         return;
     }
     if(changeImage == 1)
     {
-        document.getElementById("pause").src="pictures/logos/iconSun2.png"
+        document.getElementById("pause").src="pictures/logos/iconSun.png"
         changeImage = 0;
         colorCanvasC.id = "darkCanvas";
+        colorButtonC.id = "darkbutton";
         return;
     }
 }
