@@ -31,12 +31,21 @@ body{
     flex-direction: column;
 }
 
-header, main, footer{
+header, footer{
     display: flex;
     width: 75%;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    z-index: 10;
+    padding: 1em;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
     z-index: 10;
     padding: 1em;
 }
