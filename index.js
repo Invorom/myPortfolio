@@ -162,7 +162,7 @@ function changePauseImage()
     let colorButtonC5 = document.getElementById("clearButton5");
     if(changeImage == 0)
     {
-        document.getElementById("pause").src="pictures/logos/iconMoon.png"
+        document.getElementById("mode").src="pictures/logos/iconMoon.png"
         changeImage = 1;
         colorCanvasD.id = "clearCanvas";
         colorButtonD1.id = "clearButton1";
@@ -174,7 +174,7 @@ function changePauseImage()
     }
     if(changeImage == 1)
     {
-        document.getElementById("pause").src="pictures/logos/iconSun.png"
+        document.getElementById("mode").src="pictures/logos/iconSun.png"
         changeImage = 0;
         colorCanvasC.id = "darkCanvas";
         colorButtonC1.id = "darkButton1";

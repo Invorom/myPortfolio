@@ -40,6 +40,11 @@ header, main, footer{
     z-index: 10;
 }
 
+header #mode{
+    align-self: flex-end;
+    z-index: 11;
+}
+
 #darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5{
     display: flex;
     width: 25%;
@@ -82,7 +87,7 @@ h1, h2{
     color: white;
 }
 
-img{
+#mode{
     display: flex;
     width: 10%;
     transition: all .2s ease-in-out;
