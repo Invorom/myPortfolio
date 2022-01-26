@@ -150,14 +150,26 @@ function changePauseImage()
 {
     let colorCanvasD = document.getElementById("darkCanvas");
     let colorCanvasC = document.getElementById("clearCanvas");
-    let colorButtonD = document.getElementsByClassName("darkButton");
-    let colorButtonC = document.getElementsByClassName("clearButton");
+    let colorButtonD1 = document.getElementById("darkButton1");
+    let colorButtonC1 = document.getElementById("clearButton1");
+    let colorButtonD2 = document.getElementById("darkButton2");
+    let colorButtonC2 = document.getElementById("clearButton2");
+    let colorButtonD3 = document.getElementById("darkButton3");
+    let colorButtonC3 = document.getElementById("clearButton3");
+    let colorButtonD4 = document.getElementById("darkButton4");
+    let colorButtonC4 = document.getElementById("clearButton4");
+    let colorButtonD5 = document.getElementById("darkButton5");
+    let colorButtonC5 = document.getElementById("clearButton5");
     if(changeImage == 0)
     {
         document.getElementById("pause").src="pictures/logos/iconMoon.png"
         changeImage = 1;
         colorCanvasD.id = "clearCanvas";
-        colorButtonD.className = "clearButton";
+        colorButtonD1.id = "clearButton1";
+        colorButtonD2.id = "clearButton2";
+        colorButtonD3.id = "clearButton3";
+        colorButtonD4.id = "clearButton4";
+        colorButtonD5.id = "clearButton5";
         return;
     }
     if(changeImage == 1)
@@ -165,7 +177,11 @@ function changePauseImage()
         document.getElementById("pause").src="pictures/logos/iconSun.png"
         changeImage = 0;
         colorCanvasC.id = "darkCanvas";
-        colorButtonC.className = "darkButton";
+        colorButtonC1.id = "darkButton1";
+        colorButtonC2.id = "darkButton2";
+        colorButtonC3.id = "darkButton3";
+        colorButtonC4.id = "darkButton4";
+        colorButtonC5.id = "darkButton5";
         return;
     }
 }
