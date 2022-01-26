@@ -40,7 +40,7 @@ header, main, footer{
     z-index: 10;
 }
 
-main #darkButton{
+#darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5{
     display: flex;
     width: 25%;
     justify-content: center;
@@ -54,7 +54,7 @@ main #darkButton{
     box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
 }
 
-main #clearButton{
+#clearButton1, #clearButton2, #clearButton3, #clearButton4, #clearButton5{
     display: flex;
     width: 25%;
     justify-content: center;
@@ -68,12 +68,12 @@ main #clearButton{
     box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
 }
 
-#darkButton:hover{
+#darkButton1:hover, #darkButton2:hover, #darkButton3:hover, #darkButton4:hover, #darkButton5:hover{
     background-color: rgba(6, 255, 255, 1);
     transform: scale(1.2)
 }
 
-#clearButton:hover{
+#clearButton1:hover, #clearButton2:hover, #clearButton3:hover, #clearButton4:hover, #clearButton5:hover{
     background-color: rgba(6, 255, 255, 1);
     transform: scale(1.2)
 }
