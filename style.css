@@ -44,6 +44,11 @@ header{
     z-index: 10;
     padding: 1em;
 }
+header a{
+    display: flex;
+    width: 100%;
+    padding: 2em;
+}
 #logo{
     margin-bottom: 40%;
 }
@@ -60,7 +65,6 @@ main{
 }
 .myName{
     transition: all .3s ease-in-out;
-    
 }
 .myName:hover{
     color:rgba(6, 255, 255, 1);
@@ -125,4 +129,5 @@ img:hover{
 
 #logoName{
     width: 10%;
+    transform: none;
 }
