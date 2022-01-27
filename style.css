@@ -44,9 +44,6 @@ header{
     z-index: 10;
     padding: 1em;
 }
-header h1{
-    white-space:nowrap;
-}
 #logo{
     margin-bottom: 40%;
 }
@@ -60,6 +57,13 @@ main{
     z-index: 10;
     padding: 1em;
     font-size: 25px;
+}
+.myName{
+    transition: all .3s ease-in-out;
+    
+}
+.myName:hover{
+    color:rgba(6, 255, 255, 1);
 }
 
 footer{
@@ -109,10 +113,6 @@ footer{
     transform: scale(1.2)
 }
 
-h1, h2{
-    color: white;
-}
-
 #mode{
     display: flex;
     width: 100%;
@@ -121,4 +121,8 @@ h1, h2{
 
 img:hover{
     transform: scale(1.2);
+}
+
+#logoName{
+    width: 10%;
 }
