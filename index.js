@@ -191,6 +191,7 @@ function changePauseImage()
 }
 
 // Dark main
+const darkTextH1 = document.querySelector("#darkH1");
 const aboutButtonD = document.querySelector("#darkButton1");
 aboutButtonD.addEventListener("click", function()
     {
@@ -199,6 +200,7 @@ aboutButtonD.addEventListener("click", function()
         skillsButtonD.style.display = "none";
         experienceButtonD.style.display = "none";
         contactButtonD.style.display = "none";
+        darkTextH1.style.display = "none";
     }
 );
 
@@ -210,6 +212,7 @@ goalButtonD.addEventListener("click", function()
         skillsButtonD.style.display = "none";
         experienceButtonD.style.display = "none";
         contactButtonD.style.display = "none";
+        darkTextH1.style.display = "none";
     }
 );
 
@@ -221,6 +224,7 @@ skillsButtonD.addEventListener("click", function()
         skillsButtonD.style.display = "none";
         experienceButtonD.style.display = "none";
         contactButtonD.style.display = "none";
+        darkTextH1.style.display = "none";
     }
 );
 
@@ -232,6 +236,7 @@ experienceButtonD.addEventListener("click", function()
         skillsButtonD.style.display = "none";
         experienceButtonD.style.display = "none";
         contactButtonD.style.display = "none";
+        darkTextH1.style.display = "none";
     }
 );
 
@@ -243,6 +248,7 @@ contactButtonD.addEventListener("click", function()
         skillsButtonD.style.display = "none";
         experienceButtonD.style.display = "none";
         contactButtonD.style.display = "none";
+        darkTextH1.style.display = "none";
     }
 );
 
