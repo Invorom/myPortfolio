@@ -94,8 +94,8 @@ function createParticles()
         let size = (Math.random() * 0.5) + 0.1;
         let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
         let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
-        let directionX = (Math.random() * 1) - 1;
-        let directionY = (Math.random() * 1) - 1;
+        let directionX = (Math.random() * 1) - 0.5;
+        let directionY = (Math.random() * 1) - 0.5;
         let color = 'rgb(6, 255, 255)';
 
         particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
@@ -110,7 +110,7 @@ function connectParticles()
         for(let j = i; j < particlesArray.length; j++)
         {
             let distance = ((particlesArray[i].x - particlesArray[j].x) * (particlesArray[i].x - particlesArray[j].x)) + ((particlesArray[i].y - particlesArray[j].y) * (particlesArray[i].y - particlesArray[j].y));
-            if(distance < (canvas.width/12) * (canvas.height/12))
+            if(distance < (canvas.width/15) * (canvas.height/15))
             {
                 ctx.strokeStyle = 'rgb(6, 255, 255)';
                 ctx.lineWidth = 1;
