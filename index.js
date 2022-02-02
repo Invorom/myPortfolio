@@ -148,18 +148,18 @@ launchParticles();
 let changeImage = 0;
 function changePauseImage()
 {
-    let colorCanvasD = document.getElementById("darkCanvas");
-    let colorCanvasC = document.getElementById("clearCanvas");
-    let colorButtonD1 = document.getElementById("darkButton1");
-    let colorButtonC1 = document.getElementById("clearButton1");
-    let colorButtonD2 = document.getElementById("darkButton2");
-    let colorButtonC2 = document.getElementById("clearButton2");
-    let colorButtonD3 = document.getElementById("darkButton3");
-    let colorButtonC3 = document.getElementById("clearButton3");
-    let colorButtonD4 = document.getElementById("darkButton4");
-    let colorButtonC4 = document.getElementById("clearButton4");
-    let colorButtonD5 = document.getElementById("darkButton5");
-    let colorButtonC5 = document.getElementById("clearButton5");
+    const colorCanvasD = document.getElementById("darkCanvas");
+    const colorCanvasC = document.getElementById("clearCanvas");
+    const colorButtonD1 = document.getElementById("darkButton1");
+    const colorButtonC1 = document.getElementById("clearButton1");
+    const colorButtonD2 = document.getElementById("darkButton2");
+    const colorButtonC2 = document.getElementById("clearButton2");
+    const colorButtonD3 = document.getElementById("darkButton3");
+    const colorButtonC3 = document.getElementById("clearButton3");
+    const colorButtonD4 = document.getElementById("darkButton4");
+    const colorButtonC4 = document.getElementById("clearButton4");
+    const colorButtonD5 = document.getElementById("darkButton5");
+    const colorButtonC5 = document.getElementById("clearButton5");
     if(changeImage == 0)
     {
         document.getElementById("mode").src="pictures/logos/iconMoon.png"
