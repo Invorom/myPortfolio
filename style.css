@@ -71,8 +71,15 @@ main{
     color:rgba(6, 255, 255, 1);
     transition: all 0.01s ease-in-out;
 }
-h1{
+#darkH1{
     letter-spacing: -6px;
+    padding: 1em;
+    color: black;
+}
+#clearH1{
+    letter-spacing: -6px;
+    padding: 1em;
+    color: white;
 }
 
 footer{
@@ -90,7 +97,7 @@ footer{
     background-color: rgba(6, 255, 255, 0.5);
     color: rgb(0, 0, 0);
     font-size: 25px;
-    transition: all .2s ease-in-out;
+    transition: all 0.6s ease-in-out;
     padding: 1em 1em;
     margin: 2%;
     border-color: rgb(0, 0, 0);
@@ -105,7 +112,7 @@ footer{
     background-color: rgba(6, 255, 255, 0.5);
     color: rgb(255,255,255);
     font-size: 25px;
-    transition: all .2s ease-in-out;
+    transition: all 0.6s ease-in-out;
     padding: 1em 1em;
     margin: 2%;
     border-color: rgb(255,255,255);
@@ -114,12 +121,14 @@ footer{
 
 #darkButton1:hover, #darkButton2:hover, #darkButton3:hover, #darkButton4:hover, #darkButton5:hover{
     background-color: rgba(6, 255, 255, 1);
-    transform: scale(1.2)
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
 }
 
 #clearButton1:hover, #clearButton2:hover, #clearButton3:hover, #clearButton4:hover, #clearButton5:hover{
     background-color: rgba(6, 255, 255, 1);
-    transform: scale(1.2)
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
 }
 
 #mode{

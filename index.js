@@ -160,6 +160,8 @@ function changePauseImage()
     const colorButtonC4 = document.getElementById("clearButton4");
     const colorButtonD5 = document.getElementById("darkButton5");
     const colorButtonC5 = document.getElementById("clearButton5");
+    const colorTextD = document.getElementById("darkH1");
+    const colorTextC = document.getElementById("clearH1");
     if(changeImage == 0)
     {
         document.getElementById("mode").src="pictures/logos/iconMoon.png"
@@ -170,6 +172,7 @@ function changePauseImage()
         colorButtonD3.id = "clearButton3";
         colorButtonD4.id = "clearButton4";
         colorButtonD5.id = "clearButton5";
+        colorTextD.id = "clearH1";
         return;
     }
     if(changeImage == 1)
@@ -182,6 +185,7 @@ function changePauseImage()
         colorButtonC3.id = "darkButton3";
         colorButtonC4.id = "darkButton4";
         colorButtonC5.id = "darkButton5";
+        colorTextC.id = "darkH1";
         return;
     }
 }
