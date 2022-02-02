@@ -191,7 +191,6 @@ function changePauseImage()
 }
 
 // Dark main
-const 
 const aboutButtonD = document.querySelector("#darkButton1");
 aboutButtonD.addEventListener("click", function()
     {
