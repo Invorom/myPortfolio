@@ -144,7 +144,7 @@ function launchParticles()
 }
 launchParticles();
 
-// Change the pause button state
+// Change the pause button state and color mode
 let changeImage = 0;
 function changePauseImage()
 {
@@ -189,3 +189,75 @@ function changePauseImage()
         return;
     }
 }
+
+// Dark main
+const aboutButtonD = document.querySelector("#darkButton1");
+aboutButtonD.addEventListener("click", function()
+    {
+        
+    }
+);
+
+const goalButtonD = document.querySelector("#darkButton2");
+goalButtonD.addEventListener("click", function()
+    {
+        
+    }
+);
+
+const skillsButtonD = document.querySelector("#darkButton3");
+skillsButtonD.addEventListener("click", function()
+    {
+        
+    }
+);
+
+const experienceButtonD = document.querySelector("#darkButton4");
+experienceButtonD.addEventListener("click", function()
+    {
+        
+    }
+);
+
+const contactButtonD = document.querySelector("#darkButton5");
+contactButtonD.addEventListener("click", function()
+    {
+        
+    }
+);
+
+// Clear main
+const aboutButtonC = document.querySelector("#clearButton1");
+aboutButtonD.addEventListener("click", function()
+    {
+        
+    }
+);
+
+const goalButtonC = document.querySelector("#clearButton2");
+goalButtonC.addEventListener("click", function()
+    {
+        
+    }
+);
+
+const skillsButtonc = document.querySelector("#clearButton3");
+skillsButtonC.addEventListener("click", function()
+    {
+        
+    }
+);
+
+const experienceButtonC = document.querySelector("#clearButton4");
+experienceButtonC.addEventListener("click", function()
+    {
+        
+    }
+);
+
+const contactButtonC = document.querySelector("#clearButton5");
+contactButtonC.addEventListener("click", function()
+    {
+        
+    }
+);

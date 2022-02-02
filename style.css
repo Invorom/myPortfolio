@@ -1,8 +1,17 @@
+@font-face {
+    font-family : "Numans";
+    src : url("/fonts/Numans-Regular.woff"),
+    url("/fonts/Numans-Regular.woff2");
+    font-weight : normal;
+    font-style : normal;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    font-family: "Numans";
 }
 
 #darkCanvas{
@@ -72,12 +81,12 @@ main{
     transition: all 0.01s ease-in-out;
 }
 #darkH1{
-    letter-spacing: -6px;
+    letter-spacing: -8px;
     padding: 1em;
     color: black;
 }
 #clearH1{
-    letter-spacing: -6px;
+    letter-spacing: -8px;
     padding: 1em;
     color: white;
 }
