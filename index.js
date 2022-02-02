@@ -191,38 +191,59 @@ function changePauseImage()
 }
 
 // Dark main
+const 
 const aboutButtonD = document.querySelector("#darkButton1");
 aboutButtonD.addEventListener("click", function()
     {
-        
+        aboutButtonD.style.display = "none";
+        goalButtonD.style.display = "none";
+        skillsButtonD.style.display = "none";
+        experienceButtonD.style.display = "none";
+        contactButtonD.style.display = "none";
     }
 );
 
 const goalButtonD = document.querySelector("#darkButton2");
 goalButtonD.addEventListener("click", function()
     {
-        
+        aboutButtonD.style.display = "none";
+        goalButtonD.style.display = "none";
+        skillsButtonD.style.display = "none";
+        experienceButtonD.style.display = "none";
+        contactButtonD.style.display = "none";
     }
 );
 
 const skillsButtonD = document.querySelector("#darkButton3");
 skillsButtonD.addEventListener("click", function()
     {
-        
+        aboutButtonD.style.display = "none";
+        goalButtonD.style.display = "none";
+        skillsButtonD.style.display = "none";
+        experienceButtonD.style.display = "none";
+        contactButtonD.style.display = "none";
     }
 );
 
 const experienceButtonD = document.querySelector("#darkButton4");
 experienceButtonD.addEventListener("click", function()
     {
-        
+        aboutButtonD.style.display = "none";
+        goalButtonD.style.display = "none";
+        skillsButtonD.style.display = "none";
+        experienceButtonD.style.display = "none";
+        contactButtonD.style.display = "none";
     }
 );
 
 const contactButtonD = document.querySelector("#darkButton5");
 contactButtonD.addEventListener("click", function()
     {
-        
+        aboutButtonD.style.display = "none";
+        goalButtonD.style.display = "none";
+        skillsButtonD.style.display = "none";
+        experienceButtonD.style.display = "none";
+        contactButtonD.style.display = "none";
     }
 );
 
