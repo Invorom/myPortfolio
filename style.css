@@ -49,17 +49,15 @@ header{
     width: 100%;
     flex-direction: column;
     align-items: start;
-    justify-content: flex-end;
+    justify-content: space-between;
     z-index: 10;
     padding: 1em;
 }
 header a{
     display: flex;
-    width: 100%;
     padding: 2em;
 }
 #logo{
-    margin-bottom: 40%;
     height: 50%;
     transition: all .3s ease-in-out;
 }
@@ -112,6 +110,20 @@ footer{
     border-color: rgb(0, 0, 0);
     box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
 }
+#darkButton6{
+    display: none;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(6, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    transition: all 0.6s ease-in-out;
+    padding: 1em 1em;
+    margin: 2%;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
+}
 
 #clearButton1, #clearButton2, #clearButton3, #clearButton4, #clearButton5{
     display: flex;
@@ -127,14 +139,28 @@ footer{
     border-color: rgb(255,255,255);
     box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
 }
+#clearButton6{
+    display: none;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(6, 255, 255, 0.5);
+    color: rgb(255,255,255);
+    font-size: 25px;
+    transition: all 0.6s ease-in-out;
+    padding: 1em 1em;
+    margin: 2%;
+    border-color: rgb(255,255,255);
+    box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
+}
 
-#darkButton1:hover, #darkButton2:hover, #darkButton3:hover, #darkButton4:hover, #darkButton5:hover{
+#darkButton1:hover, #darkButton2:hover, #darkButton3:hover, #darkButton4:hover, #darkButton5:hover, #darkButton6:hover{
     background-color: rgba(6, 255, 255, 1);
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
 }
 
-#clearButton1:hover, #clearButton2:hover, #clearButton3:hover, #clearButton4:hover, #clearButton5:hover{
+#clearButton1:hover, #clearButton2:hover, #clearButton3:hover, #clearButton4:hover, #clearButton5:hover, #clearButton6:hover{
     background-color: rgba(6, 255, 255, 1);
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;

@@ -160,6 +160,8 @@ function changePauseImage()
     const colorButtonC4 = document.getElementById("clearButton4");
     const colorButtonD5 = document.getElementById("darkButton5");
     const colorButtonC5 = document.getElementById("clearButton5");
+    const colorButtonD6 = document.getElementById("darkButton6");
+    const colorButtonC6 = document.getElementById("clearButton6");
     const colorTextD = document.getElementById("darkH1");
     const colorTextC = document.getElementById("clearH1");
     if(changeImage == 0)
@@ -172,6 +174,7 @@ function changePauseImage()
         colorButtonD3.id = "clearButton3";
         colorButtonD4.id = "clearButton4";
         colorButtonD5.id = "clearButton5";
+        colorButtonD6.id = "clearButton6";
         colorTextD.id = "clearH1";
         return;
     }
@@ -185,12 +188,13 @@ function changePauseImage()
         colorButtonC3.id = "darkButton3";
         colorButtonC4.id = "darkButton4";
         colorButtonC5.id = "darkButton5";
+        colorButtonC6.id = "darkButton6";
         colorTextC.id = "darkH1";
         return;
     }
 }
 
-// Dark main
+// Main
 const darkTextH1 = document.querySelector("#darkH1");
 const aboutButtonD = document.querySelector("#darkButton1");
 aboutButtonD.addEventListener("click", function()
@@ -201,6 +205,7 @@ aboutButtonD.addEventListener("click", function()
         experienceButtonD.style.display = "none";
         contactButtonD.style.display = "none";
         darkTextH1.style.display = "none";
+        backButtonD.style.display = "flex";
     }
 );
 
@@ -213,6 +218,7 @@ goalButtonD.addEventListener("click", function()
         experienceButtonD.style.display = "none";
         contactButtonD.style.display = "none";
         darkTextH1.style.display = "none";
+        backButtonD.style.display = "flex";
     }
 );
 
@@ -225,6 +231,7 @@ skillsButtonD.addEventListener("click", function()
         experienceButtonD.style.display = "none";
         contactButtonD.style.display = "none";
         darkTextH1.style.display = "none";
+        backButtonD.style.display = "flex";
     }
 );
 
@@ -237,6 +244,7 @@ experienceButtonD.addEventListener("click", function()
         experienceButtonD.style.display = "none";
         contactButtonD.style.display = "none";
         darkTextH1.style.display = "none";
+        backButtonD.style.display = "flex";
     }
 );
 
@@ -249,41 +257,19 @@ contactButtonD.addEventListener("click", function()
         experienceButtonD.style.display = "none";
         contactButtonD.style.display = "none";
         darkTextH1.style.display = "none";
+        backButtonD.style.display = "flex";
     }
 );
 
-// Clear main
-const aboutButtonC = document.querySelector("#clearButton1");
-aboutButtonD.addEventListener("click", function()
+const backButtonD = document.querySelector("#darkButton6");
+backButtonD.addEventListener("click", function()
     {
-        
-    }
-);
-
-const goalButtonC = document.querySelector("#clearButton2");
-goalButtonC.addEventListener("click", function()
-    {
-        
-    }
-);
-
-const skillsButtonc = document.querySelector("#clearButton3");
-skillsButtonC.addEventListener("click", function()
-    {
-        
-    }
-);
-
-const experienceButtonC = document.querySelector("#clearButton4");
-experienceButtonC.addEventListener("click", function()
-    {
-        
-    }
-);
-
-const contactButtonC = document.querySelector("#clearButton5");
-contactButtonC.addEventListener("click", function()
-    {
-        
+        aboutButtonD.style.display = "flex";
+        goalButtonD.style.display = "flex";
+        skillsButtonD.style.display = "flex";
+        experienceButtonD.style.display = "flex";
+        contactButtonD.style.display = "flex";
+        darkTextH1.style.display = "block";
+        backButtonD.style.display = "none";
     }
 );
