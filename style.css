@@ -80,12 +80,12 @@ main{
 }
 #darkH1{
     letter-spacing: -8px;
-    padding: 1em;
+    padding-right: 1em;
     color: black;
 }
 #clearH1{
     letter-spacing: -8px;
-    padding: 1em;
+    padding-right: 1em;
     color: white;
 }
 
