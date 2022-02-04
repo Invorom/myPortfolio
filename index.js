@@ -197,6 +197,7 @@ function changePauseImage()
 // Main
 const darkTextH1 = document.querySelector("#darkH1");
 const aboutButtonD = document.querySelector("#darkButton1");
+const aboutText = document.querySelector("#about");
 aboutButtonD.addEventListener("click", function()
     {
         aboutButtonD.style.display = "none";
@@ -206,6 +207,7 @@ aboutButtonD.addEventListener("click", function()
         contactButtonD.style.display = "none";
         darkTextH1.style.display = "none";
         backButtonD.style.display = "flex";
+        aboutText.style.display = "flex";
     }
 );
 
@@ -271,5 +273,6 @@ backButtonD.addEventListener("click", function()
         contactButtonD.style.display = "flex";
         darkTextH1.style.display = "block";
         backButtonD.style.display = "none";
+        aboutText.style.display = "none";
     }
 );
