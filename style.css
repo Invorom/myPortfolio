@@ -46,12 +46,12 @@ body{
 
 header{
     display: flex;
-    width: 100%;
+    width: 40%;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
     z-index: 10;
-    padding: 1em;
+    padding: 0 2em 1em 2em;
 }
 header a{
     display: flex;
@@ -66,7 +66,7 @@ main{
     display: flex;
     width: 170%;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     z-index: 10;
     font-size: 25px;
@@ -90,6 +90,8 @@ main{
 }
 #about{
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer{
@@ -101,7 +103,7 @@ footer{
 
 #darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5{
     display: flex;
-    width: 40%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: rgba(6, 255, 255, 0.5);
@@ -115,7 +117,7 @@ footer{
 }
 #darkButton6{
     display: none;
-    width: 40%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: rgba(6, 255, 255, 0.5);
@@ -130,7 +132,7 @@ footer{
 
 #clearButton1, #clearButton2, #clearButton3, #clearButton4, #clearButton5{
     display: flex;
-    width: 40%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: rgba(6, 255, 255, 0.5);
@@ -144,7 +146,7 @@ footer{
 }
 #clearButton6{
     display: none;
-    width: 40%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: rgba(6, 255, 255, 0.5);
