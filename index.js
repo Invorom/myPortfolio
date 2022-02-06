@@ -91,35 +91,14 @@ function createParticles()
     let numberParticles = (canvas.height * canvas.width) / 6000;
     for(let i = 0; i < numberParticles; i++)
     {
-        let size = (Math.random() * 0.5) + 0.1;
+        let size = (Math.random() * 2) + 0.5;
         let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
         let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
-        let directionX = (Math.random() * 1) - 0.5;
-        let directionY = (Math.random() * 1) - 0.5;
+        let directionX = (Math.random() * 0.5) - 0.25;
+        let directionY = (Math.random() * 0.5) - 0.25;
         let color = 'rgb(6, 255, 255)';
 
         particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
-    }
-}
-
-// Draw a line between close particles
-function connectParticles()
-{
-    for(let i = 0; i < particlesArray.length; i++)
-    {
-        for(let j = i; j < particlesArray.length; j++)
-        {
-            let distance = ((particlesArray[i].x - particlesArray[j].x) * (particlesArray[i].x - particlesArray[j].x)) + ((particlesArray[i].y - particlesArray[j].y) * (particlesArray[i].y - particlesArray[j].y));
-            if(distance < (canvas.width/15) * (canvas.height/15))
-            {
-                ctx.strokeStyle = 'rgb(6, 255, 255)';
-                ctx.lineWidth = 1;
-                ctx.beginPath();
-                ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
-                ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
-                ctx.stroke();
-            }
-        }
     }
 }
 
@@ -133,7 +112,6 @@ function animation()
     {
         particlesArray[i].update();
     }
-    connectParticles();
 }
 
 // Launch the script
