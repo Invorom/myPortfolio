@@ -48,7 +48,7 @@ body{
     height: 100%;
 }
 
-/* ----------------header----------------*/
+/*----------------header----------------*/
 header{
     display: flex;
     width: 40%;
@@ -68,7 +68,7 @@ header a{
     transition: all .3s ease-in-out;
 }
 
-/*button*/
+/*dark button*/
 #darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5{
     display: flex;
     width: 100%;
@@ -82,6 +82,11 @@ header a{
     margin: 2%;
     border-color: rgb(0, 0, 0);
     box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
+}
+#darkButton1:hover, #darkButton2:hover, #darkButton3:hover, #darkButton4:hover, #darkButton5:hover, #darkButton6:hover{
+    background-color: rgba(6, 255, 255, 1);
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
 }
 #darkButton6{
     display: none;
@@ -98,6 +103,7 @@ header a{
     box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
 }
 
+/*clear button*/
 #clearButton1, #clearButton2, #clearButton3, #clearButton4, #clearButton5{
     display: flex;
     width: 100%;
@@ -126,20 +132,13 @@ header a{
     border-color: rgb(255,255,255);
     box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
 }
-
-#darkButton1:hover, #darkButton2:hover, #darkButton3:hover, #darkButton4:hover, #darkButton5:hover, #darkButton6:hover{
-    background-color: rgba(6, 255, 255, 1);
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
-}
-
 #clearButton1:hover, #clearButton2:hover, #clearButton3:hover, #clearButton4:hover, #clearButton5:hover, #clearButton6:hover{
     background-color: rgba(6, 255, 255, 1);
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
 }
 
-/* ----------------main----------------*/
+/*----------------main----------------*/
 main{
     display: flex;
     width: 170%;
@@ -166,6 +165,8 @@ main{
     padding-right: 1em;
     color: white;
 }
+
+/*dark text*/
 #aboutD, #goalD, #skillsD, #experienceD, #contactD{
     display: none;
     width: 100%;
@@ -177,38 +178,11 @@ main{
     color: black;
     transition: all .6s ease-in-out;
 }
-#skills{
-    display: flex;
-}
-
-/*text*/
-#aboutC, #goalC, #skillsC, #experienceC, #contactC{
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    background-color: rgba(6, 61, 62, 0.2);
-    border-radius: 20px;
-    color: white;
-    transition: all .6s ease-in-out;
-}
 #aboutD p, #goalD p, #skillsD p, #experienceD p, #contactD p{
     padding-top: 1em;
     width: 75%;
 }
-#aboutC p, #goalC p, #skillsC p, #experienceC p, #contactC p{
-    padding-top: 1em;
-    width: 75%;
-}
-#skillsD ul{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 1em;
-}
-#skillsC ul{
+#skillsD ul, #experienceD ul{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -231,6 +205,30 @@ main{
     transition: all .1s ease-in-out;
     transform: scale(1.2);
 }
+
+/*clear text*/
+#aboutC, #goalC, #skillsC, #experienceC, #contactC{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: rgba(6, 61, 62, 0.2);
+    border-radius: 20px;
+    color: white;
+    transition: all .6s ease-in-out;
+}
+#aboutC p, #goalC p, #skillsC p, #experienceC p, #contactC p{
+    padding-top: 1em;
+    width: 75%;
+}
+#skillsC ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em;
+}
 #skillsC li{
     display: flex;
     flex-direction: column;
@@ -248,7 +246,11 @@ main{
     transform: scale(1.2);
 }
 
-/*footer*/
+#skills{
+    display: flex;
+}
+
+/*----------------footer----------------*/
 footer{
     display: flex;
     flex-direction: column;
@@ -256,6 +258,7 @@ footer{
     padding: 1em;
 }
 
+/*images*/
 #mode{
     display: flex;
     width: 100%;
