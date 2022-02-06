@@ -144,52 +144,54 @@ function launchParticles()
 }
 launchParticles();
 
-// Change the pause button state and color mode
+// Change the color button state and color mode
 let changeImage = 0;
-function changePauseImage()
+const colorCanvas = document.querySelector("#darkCanvas");
+const colorButton1 = document.querySelector("#darkButton1");
+const colorButton2 = document.querySelector("#darkButton2");
+const colorButton3 = document.querySelector("#darkButton3");
+const colorButton4 = document.querySelector("#darkButton4");
+const colorButton5 = document.querySelector("#darkButton5");
+const colorButton6 = document.querySelector("#darkButton6");
+const colorText = document.querySelector("#darkH1");
+function changeColorImage()
 {
-    const colorCanvasD = document.getElementById("darkCanvas");
-    const colorCanvasC = document.getElementById("clearCanvas");
-    const colorButtonD1 = document.getElementById("darkButton1");
-    const colorButtonC1 = document.getElementById("clearButton1");
-    const colorButtonD2 = document.getElementById("darkButton2");
-    const colorButtonC2 = document.getElementById("clearButton2");
-    const colorButtonD3 = document.getElementById("darkButton3");
-    const colorButtonC3 = document.getElementById("clearButton3");
-    const colorButtonD4 = document.getElementById("darkButton4");
-    const colorButtonC4 = document.getElementById("clearButton4");
-    const colorButtonD5 = document.getElementById("darkButton5");
-    const colorButtonC5 = document.getElementById("clearButton5");
-    const colorButtonD6 = document.getElementById("darkButton6");
-    const colorButtonC6 = document.getElementById("clearButton6");
-    const colorTextD = document.getElementById("darkH1");
-    const colorTextC = document.getElementById("clearH1");
     if(changeImage == 0)
     {
         document.getElementById("mode").src="pictures/logos/iconMoon.png"
         changeImage = 1;
-        colorCanvasD.id = "clearCanvas";
-        colorButtonD1.id = "clearButton1";
-        colorButtonD2.id = "clearButton2";
-        colorButtonD3.id = "clearButton3";
-        colorButtonD4.id = "clearButton4";
-        colorButtonD5.id = "clearButton5";
-        colorButtonD6.id = "clearButton6";
-        colorTextD.id = "clearH1";
+        colorCanvas.id = "clearCanvas";
+        colorButton1.id = "clearButton1";
+        colorButton2.id = "clearButton2";
+        colorButton3.id = "clearButton3";
+        colorButton4.id = "clearButton4";
+        colorButton5.id = "clearButton5";
+        colorButton6.id = "clearButton6";
+        colorText.id = "clearH1";
+        aboutText.id = "aboutC";
+        goalText.id = "goalC";
+        skillsText.id = "skillsC";
+        experienceText.id = "experienceC";
+        contactText.id = "contactC";
         return;
     }
     if(changeImage == 1)
     {
         document.getElementById("mode").src="pictures/logos/iconSun.png"
         changeImage = 0;
-        colorCanvasC.id = "darkCanvas";
-        colorButtonC1.id = "darkButton1";
-        colorButtonC2.id = "darkButton2";
-        colorButtonC3.id = "darkButton3";
-        colorButtonC4.id = "darkButton4";
-        colorButtonC5.id = "darkButton5";
-        colorButtonC6.id = "darkButton6";
-        colorTextC.id = "darkH1";
+        colorCanvas.id = "darkCanvas";
+        colorButton1.id = "darkButton1";
+        colorButton2.id = "darkButton2";
+        colorButton3.id = "darkButton3";
+        colorButton4.id = "darkButton4";
+        colorButton5.id = "darkButton5";
+        colorButton6.id = "darkButton6";
+        colorText.id = "darkH1";
+        aboutText.id = "aboutD";
+        goalText.id = "goalD";
+        skillsText.id = "skillsD";
+        experienceText.id = "experienceD";
+        contactText.id = "contactD";
         return;
     }
 }
@@ -197,11 +199,11 @@ function changePauseImage()
 // Main
 const darkTextH1 = document.querySelector("#darkH1");
 const aboutButtonD = document.querySelector("#darkButton1");
-const aboutText = document.querySelector("#about");
-const goalText = document.querySelector("#goal");
-const skillsText = document.querySelector("#skills");
-const experienceText = document.querySelector("#experience");
-const contactText = document.querySelector("#contact");
+const aboutText = document.querySelector("#aboutD");
+const goalText = document.querySelector("#goalD");
+const skillsText = document.querySelector("#skillsD");
+const experienceText = document.querySelector("#experienceD");
+const contactText = document.querySelector("#contactD");
 aboutButtonD.addEventListener("click", function()
     {
         aboutButtonD.style.display = "none";

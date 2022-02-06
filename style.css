@@ -89,11 +89,37 @@ main{
     padding-right: 1em;
     color: white;
 }
-#about, #goal, #skills, #experience, #contact{
+#aboutD, #goalD, #skillsD, #experienceD, #contactD{
     display: none;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 1em;
+    background-color: rgba(6, 61, 62, 0.8);
+    border-radius: 20px;
+    color: black;
+}
+#aboutC, #goalC, #skillsC, #experienceC, #contactC{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: rgba(6, 61, 62, 0.2);
+    border-radius: 20px;
+    color: white;
+}
+#aboutD p, #goalD p, #skillsD p, #experienceD p, #contactD p{
+    width: 75%;
+}
+#aboutC p, #goalC p, #skillsC p, #experienceC p, #contactC p{
+    width: 75%;
+}
+#skills ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 footer{
