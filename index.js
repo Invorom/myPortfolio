@@ -198,6 +198,10 @@ function changePauseImage()
 const darkTextH1 = document.querySelector("#darkH1");
 const aboutButtonD = document.querySelector("#darkButton1");
 const aboutText = document.querySelector("#about");
+const goalText = document.querySelector("#goal");
+const skillsText = document.querySelector("#skills");
+const experienceText = document.querySelector("#experience");
+const contactText = document.querySelector("#contact");
 aboutButtonD.addEventListener("click", function()
     {
         aboutButtonD.style.display = "none";
@@ -221,6 +225,7 @@ goalButtonD.addEventListener("click", function()
         contactButtonD.style.display = "none";
         darkTextH1.style.display = "none";
         backButtonD.style.display = "flex";
+        goalText.style.display = "flex";
     }
 );
 
@@ -234,6 +239,7 @@ skillsButtonD.addEventListener("click", function()
         contactButtonD.style.display = "none";
         darkTextH1.style.display = "none";
         backButtonD.style.display = "flex";
+        skillsText.style.display = "flex";
     }
 );
 
@@ -247,6 +253,7 @@ experienceButtonD.addEventListener("click", function()
         contactButtonD.style.display = "none";
         darkTextH1.style.display = "none";
         backButtonD.style.display = "flex";
+        experienceText.style.display = "flex";
     }
 );
 
@@ -260,6 +267,7 @@ contactButtonD.addEventListener("click", function()
         contactButtonD.style.display = "none";
         darkTextH1.style.display = "none";
         backButtonD.style.display = "flex";
+        contactText.style.display = "flex";
     }
 );
 
@@ -274,5 +282,9 @@ backButtonD.addEventListener("click", function()
         darkTextH1.style.display = "block";
         backButtonD.style.display = "none";
         aboutText.style.display = "none";
+        goalText.style.display = "none";
+        skillsText.style.display = "none";
+        experienceText.style.display = "none";
+        contactText.style.display = "none";
     }
 );
