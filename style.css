@@ -100,6 +100,9 @@ main{
     color: black;
     transition: all .6s ease-in-out;
 }
+#skills{
+    display: flex;
+}
 #aboutC, #goalC, #skillsC, #experienceC, #contactC{
     display: none;
     width: 100%;
@@ -117,11 +120,19 @@ main{
 #aboutC p, #goalC p, #skillsC p, #experienceC p, #contactC p{
     width: 75%;
 }
-#skills ul{
+#skillsD ul{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    padding: 1em;
+}
+#skillsC ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em;
 }
 
 footer{
