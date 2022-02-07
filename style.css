@@ -179,7 +179,7 @@ main{
     transition: all .6s ease-in-out;
 }
 #aboutD p, #goalD p, #skillsD p, #experienceD p, #contactD p{
-    padding-top: 1em;
+    padding-top: 0.5em;
     width: 75%;
 }
 #skillsD ul{
@@ -205,8 +205,13 @@ main{
     transition: all .1s ease-in-out;
     transform: scale(1.2);
 }
+
 #experienceD{
     display: none;
+    width: 75%;
+    height: 75%;
+    color: black;
+    transition: all .6s ease-in-out;
 }
 #experience{
     display: flex;
@@ -218,7 +223,7 @@ main{
     background-color: rgba(6, 255, 255, 0.1);
     border-radius: 20px;
     border-style: solid;
-    overflow: auto;
+    width: 50%;
 }
 #diplomas{
     display: flex;
@@ -229,17 +234,15 @@ main{
     background-color: rgba(6, 255, 255, 0.1);
     border-radius: 20px;
     border-style: solid;
-    overflow: auto;
+    width: 50%;
 }
 #experienceD ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: start;
     height: 80%;
     padding: 1em;
-    font-size: 20px;
     overflow: auto;
 }
 #experienceD li{
@@ -248,12 +251,12 @@ main{
     flex-wrap: wrap;
     align-items: start;
     padding: 0.5em;
+    padding-top: 1.5em;
     border-radius: 20px;
-    transition: all .6s ease-in-out;
 }
 
 /*clear text*/
-#aboutC, #goalC, #skillsC, #experienceC, #contactC{
+#aboutC, #goalC, #skillsC, #contactC{
     display: none;
     width: 100%;
     flex-direction: column;
@@ -265,7 +268,7 @@ main{
     transition: all .6s ease-in-out;
 }
 #aboutC p, #goalC p, #skillsC p, #experienceC p, #contactC p{
-    padding-top: 1em;
+    padding-top: 0.5em;
     width: 75%;
 }
 #skillsC ul{
@@ -291,9 +294,34 @@ main{
     transition: all .1s ease-in-out;
     transform: scale(1.2);
 }
-
 #skills{
     display: flex;
+}
+
+#experienceC{
+    display: none;
+    width: 75%;
+    height: 75%;
+    color: white;
+    transition: all .6s ease-in-out;
+}
+#experienceC ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    height: 80%;
+    padding: 1em;
+    overflow: auto;
+}
+#experienceC li{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: 0.5em;
+    padding-top: 1.5em;
+    border-radius: 20px;
 }
 
 /*----------------footer----------------*/
