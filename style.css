@@ -167,7 +167,7 @@ main{
 }
 
 /*dark text*/
-#aboutD, #goalD, #skillsD, #experienceD, #contactD{
+#aboutD, #goalD, #skillsD,#contactD{
     display: none;
     width: 100%;
     flex-direction: column;
@@ -182,7 +182,7 @@ main{
     padding-top: 1em;
     width: 75%;
 }
-#skillsD ul, #experienceD ul{
+#skillsD ul{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -204,6 +204,50 @@ main{
     background-color: rgba(6, 255, 255, 1);
     transition: all .1s ease-in-out;
     transform: scale(1.2);
+}
+#experienceD{
+    display: none;
+}
+#experience{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: rgba(6, 255, 255, 0.1);
+    border-radius: 20px;
+    border-style: solid;
+}
+#diplomas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: rgba(6, 255, 255, 0.1);
+    border-radius: 20px;
+    border-style: solid;
+}
+#experienceD ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    height: 80%;
+    padding: 1em;
+    font-size: 10px;
+}
+#experienceD li{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: 0.5em;
+    border-radius: 20px;
+    transition: all .6s ease-in-out;
 }
 
 /*clear text*/
