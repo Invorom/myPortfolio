@@ -210,7 +210,7 @@ main{
 }
 #experience{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -218,27 +218,29 @@ main{
     background-color: rgba(6, 255, 255, 0.1);
     border-radius: 20px;
     border-style: solid;
+    overflow: auto;
 }
 #diplomas{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1em;
     background-color: rgba(6, 255, 255, 0.1);
     border-radius: 20px;
     border-style: solid;
+    overflow: auto;
 }
 #experienceD ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
     height: 80%;
     padding: 1em;
-    font-size: 10px;
+    font-size: 20px;
+    overflow: auto;
 }
 #experienceD li{
     display: flex;
@@ -316,4 +318,17 @@ img:hover{
 #logoName{
     width: 10%;
     transform: none;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.8); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(6, 255, 255, 0.4); 
+    border-radius: 10px;
 }
