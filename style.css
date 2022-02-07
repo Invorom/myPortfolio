@@ -254,6 +254,13 @@ main{
     padding-top: 1.5em;
     border-radius: 20px;
 }
+#experienceD a:active{
+    text-decoration: none;
+    color: rgba(6, 255, 255, 0.8);
+}
+#experienceD a:visited{
+    color: rgba(6, 255, 255, 0.8);
+}
 
 /*clear text*/
 #aboutC, #goalC, #skillsC, #contactC{
@@ -322,6 +329,13 @@ main{
     padding: 0.5em;
     padding-top: 1.5em;
     border-radius: 20px;
+}
+#experienceC a:active{
+    text-decoration: none;
+    color: rgba(6, 255, 255, 0.8);
+}
+#experienceC a:visited{
+    color: rgba(6, 255, 255, 0.8);
 }
 
 /*----------------footer----------------*/
