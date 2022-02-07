@@ -268,3 +268,18 @@ backButtonD.addEventListener("click", function()
         contactText.style.display = "none";
     }
 );
+
+//Contact
+const sendAnEmail = document.querySelector("#email");
+sendAnEmail.addEventListener("click", function()
+    {
+        window.open("mailto:romain.nerot@outlook.fr")
+    }
+);
+
+const linkedinPage = document.querySelector("#linkedin");
+linkedinPage.addEventListener("click", function()
+    {
+        window.open("https://www.linkedin.com/in/romain-nerot-a9552a1ab/")
+    }
+);
