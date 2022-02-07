@@ -10,7 +10,7 @@ let mouse =
 {
     x: null,
     y: null,
-    radius: (canvas.height/110) * (canvas.height/110)
+    radius: (canvas.height/100) * (canvas.height/100)
 }
 
 window.addEventListener('mousemove',
