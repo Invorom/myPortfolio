@@ -132,11 +132,13 @@ const colorButton4 = document.querySelector("#darkButton4");
 const colorButton5 = document.querySelector("#darkButton5");
 const colorButton6 = document.querySelector("#darkButton6");
 const colorText = document.querySelector("#darkH1");
+const colorButton7 = document.querySelector("#darkButton7");
 function changeColorImage()
 {
     if(changeImage == 0)
     {
         document.getElementById("mode").src="pictures/logos/iconMoon.png"
+        document.getElementById("email").src="pictures/logos/emailIcon2.png"
         changeImage = 1;
         colorCanvas.id = "clearCanvas";
         colorButton1.id = "clearButton1";
@@ -145,6 +147,7 @@ function changeColorImage()
         colorButton4.id = "clearButton4";
         colorButton5.id = "clearButton5";
         colorButton6.id = "clearButton6";
+        colorButton7.id = "clearButton7";
         colorText.id = "clearH1";
         aboutText.id = "aboutC";
         goalText.id = "goalC";
@@ -156,6 +159,7 @@ function changeColorImage()
     if(changeImage == 1)
     {
         document.getElementById("mode").src="pictures/logos/iconSun.png"
+        document.getElementById("email").src="pictures/logos/emailIcon.png"
         changeImage = 0;
         colorCanvas.id = "darkCanvas";
         colorButton1.id = "darkButton1";
@@ -164,6 +168,7 @@ function changeColorImage()
         colorButton4.id = "darkButton4";
         colorButton5.id = "darkButton5";
         colorButton6.id = "darkButton6";
+        colorButton7.id = "darkButton7";
         colorText.id = "darkH1";
         aboutText.id = "aboutD";
         goalText.id = "goalD";
@@ -176,14 +181,15 @@ function changeColorImage()
 
 // Main
 const darkTextH1 = document.querySelector("#darkH1");
-const aboutButtonD = document.querySelector("#darkButton1");
 const aboutText = document.querySelector("#aboutD");
 const goalText = document.querySelector("#goalD");
 const skillsText = document.querySelector("#skillsD");
 const experienceText = document.querySelector("#experienceD");
 const contactText = document.querySelector("#contactD");
+
+const aboutButtonD = document.querySelector("#darkButton1");
 aboutButtonD.addEventListener("click", function()
-    {
+    {   
         aboutButtonD.style.display = "none";
         goalButtonD.style.display = "none";
         skillsButtonD.style.display = "none";
@@ -270,7 +276,7 @@ backButtonD.addEventListener("click", function()
 );
 
 //Contact
-const sendAnEmail = document.querySelector("#email");
+const sendAnEmail = document.querySelector("#darkButton7");
 sendAnEmail.addEventListener("click", function()
     {
         window.open("mailto:romain.nerot@outlook.fr")

@@ -69,7 +69,7 @@ header a{
 }
 
 /*dark button*/
-#darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5, #darkButton7{
+#darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -92,6 +92,21 @@ header a{
 #darkButton6{
     display: none;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(6, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    transition: all 0.6s ease-in-out;
+    padding: 1em 1em;
+    margin: 2%;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
+    border-radius: 10px;
+}
+#darkButton7{
+    display: flex;
+    width: 50%;
     justify-content: center;
     align-items: center;
     background-color: rgba(6, 255, 255, 0.5);
@@ -136,7 +151,22 @@ header a{
     box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
     border-radius: 10px;
 }
-#clearButton1:hover, #clearButton2:hover, #clearButton3:hover, #clearButton4:hover, #clearButton5:hover, #clearButton6:hover{
+#clearButton7{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(6, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transition: all 0.6s ease-in-out;
+    padding: 1em 1em;
+    margin: 2%;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(6, 255, 255, 0.25);
+    border-radius: 10px;
+}
+#clearButton1:hover, #clearButton2:hover, #clearButton3:hover, #clearButton4:hover, #clearButton5:hover, #clearButton6:hover, #clearButton7:hover{
     background-color: rgba(6, 255, 255, 1);
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
@@ -286,6 +316,9 @@ main{
     padding-top: 0.5em;
     width: 75%;
 }
+#skillsC{
+    width: 75%;
+}
 #skillsC ul{
     display: flex;
     flex-direction: column;
@@ -299,6 +332,7 @@ main{
     flex-wrap: wrap;
     align-items: center;
     padding: 0.5em;
+    margin-bottom: 1em;
     background-color: rgba(6, 255, 255, 0.1);
     border-radius: 20px;
     width: 100%;
