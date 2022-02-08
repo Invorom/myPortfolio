@@ -429,6 +429,7 @@ img:hover{
     border-radius: 10px;
 }
 
+
 /*----------------Phone----------------*/
 @media all and (max-width: 1300px)
 {
@@ -436,8 +437,29 @@ img:hover{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
     }
-    
+    header{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        padding: 0 4em 1em 2em;
+    }
+
+    main{
+        display: flex;
+    }
+
+    footer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    #mode{
+        width: 10%;
+    }
 }
