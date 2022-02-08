@@ -738,9 +738,15 @@ img:hover{
     #clearH1{
         display: none;
     }
+    html{
+        justify-content: center;
+        align-items: center;
+    }
     body{
         flex-direction: column;
         flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
     }
     header{
         flex-direction: column;

@@ -349,6 +349,9 @@ backButtonD.addEventListener("click", function()
             main.style.height = "0%";
             header.style.height = "75%";
             footer.style.height = "25%";
+            logoSite.style.display = "flex";
+            logoSite.style.height = "120%";
+            modeImage.style.width = "20%";
         }
     }
 );
