@@ -187,7 +187,13 @@ const skillsText = document.querySelector("#skillsD");
 const experienceText = document.querySelector("#experienceD");
 const contactText = document.querySelector("#contactD");
 const logoSite = document.querySelector("#logo");
-let x = window.matchMedia("(max-width: 1300px)");
+const x = window.matchMedia("(max-width: 1300px)");
+const xmin = window.matchMedia("(min-width: 631px)");
+const xmax = window.matchMedia("(max-width: 630px)");
+const header = document.querySelector("header");
+const main = document.querySelector("main");
+const footer = document.querySelector("footer");
+const modeImage = document.querySelector("#mode");
 
 const aboutButtonD = document.querySelector("#darkButton1");
 aboutButtonD.addEventListener("click", function()
@@ -203,6 +209,14 @@ aboutButtonD.addEventListener("click", function()
         if(x.matches)
         {
             logoSite.style.width = "20%";
+        }
+        if(xmax.matches)
+        {
+            main.style.height = "70%";
+            header.style.height = "15%";
+            footer.style.height = "15%";
+            logoSite.style.display = "none";
+            modeImage.style.width = "10%";
         }
     }
 );
@@ -222,6 +236,14 @@ goalButtonD.addEventListener("click", function()
         {
             logoSite.style.width = "20%";
         }
+        if(xmax.matches)
+        {
+            main.style.height = "70%";
+            header.style.height = "15%";
+            footer.style.height = "15%";
+            logoSite.style.display = "none";
+            modeImage.style.width = "10%";
+        }
     }
 );
 
@@ -239,6 +261,14 @@ skillsButtonD.addEventListener("click", function()
         if(x.matches)
         {
             logoSite.style.width = "20%";
+        }
+        if(xmax.matches)
+        {
+            main.style.height = "70%";
+            header.style.height = "15%";
+            footer.style.height = "15%";
+            logoSite.style.display = "none";
+            modeImage.style.width = "10%";
         }
     }
 );
@@ -258,6 +288,14 @@ experienceButtonD.addEventListener("click", function()
         {
             logoSite.style.width = "20%";
         }
+        if(xmax.matches)
+        {
+            main.style.height = "70%";
+            header.style.height = "15%";
+            footer.style.height = "15%";
+            logoSite.style.display = "none";
+            modeImage.style.width = "10%";
+        }
     }
 );
 
@@ -276,6 +314,14 @@ contactButtonD.addEventListener("click", function()
         {
             logoSite.style.width = "20%";
         }
+        if(xmax.matches)
+        {
+            main.style.height = "70%";
+            header.style.height = "15%";
+            footer.style.height = "15%";
+            logoSite.style.display = "none";
+            modeImage.style.width = "10%";
+        }
     }
 );
 
@@ -287,7 +333,6 @@ backButtonD.addEventListener("click", function()
         skillsButtonD.style.display = "flex";
         experienceButtonD.style.display = "flex";
         contactButtonD.style.display = "flex";
-        darkTextH1.style.display = "block";
         backButtonD.style.display = "none";
         aboutText.style.display = "none";
         goalText.style.display = "none";
@@ -295,6 +340,16 @@ backButtonD.addEventListener("click", function()
         experienceText.style.display = "none";
         contactText.style.display = "none";
         logoSite.style.width = "100%";
+        if(xmin.matches)
+        {
+            darkTextH1.style.display = "block";
+        }
+        if(xmax.matches)
+        {
+            main.style.height = "0%";
+            header.style.height = "75%";
+            footer.style.height = "25%";
+        }
     }
 );
 
