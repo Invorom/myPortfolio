@@ -48,6 +48,10 @@ body{
     height: 100%;
 }
 
+h1{
+    padding-bottom: 1em;
+}
+
 /*----------------header----------------*/
 header{
     display: flex;
@@ -253,7 +257,7 @@ main{
 }
 #experience{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -433,6 +437,7 @@ img:hover{
 /*----------------Phone----------------*/
 @media all and (max-width: 1300px)
 {
+   
     body{
         display: flex;
         flex-direction: row;
@@ -442,6 +447,7 @@ img:hover{
     header{
         display: flex;
         width: 100%;
+        height: 20%;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -451,15 +457,166 @@ img:hover{
 
     main{
         display: flex;
+        height: 65%;
     }
 
     footer{
         display: flex;
         width: 100%;
+        height: 15%;
         justify-content: center;
         align-items: flex-end;
     }
     #mode{
-        width: 10%;
+        width: 8%;
+    }
+    #aboutD, #goalD, #skillsD,#contactD{
+        display: none;
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        background-color: rgba(6, 61, 62, 0.8);
+        border-radius: 20px;
+        color: black;
+        transition: all .6s ease-in-out;
+        overflow: auto;
+        font-size: 20px;
+        height: 90%;
+    }
+    #aboutC, #goalC, #skillsC,#contactC{
+        display: none;
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        background-color: rgba(6, 61, 62, 0.2);
+        border-radius: 20px;
+        color: white;
+        transition: all .6s ease-in-out;
+        overflow: auto;
+        font-size: 20px;
+        height: 90%;
+    }
+    #logo{
+        padding-top: 5.5em;
+    }
+    #skillsD ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+    #skillsD li{
+        width: 80%;
+    }
+    #skillsC ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+    #skillsC li{
+        width: 80%;
+    }
+
+}
+
+@media all and (max-height: 640px)
+{
+   
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        height: 20%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        padding: 0 4em 1em 2em;
+    }
+
+    main{
+        display: flex;
+        height: 65%;
+    }
+
+    footer{
+        display: flex;
+        width: 100%;
+        height: 15%;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    #mode{
+        width: 6%;
+    }
+    #aboutD, #goalD, #skillsD,#contactD{
+        display: none;
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        background-color: rgba(6, 61, 62, 0.8);
+        border-radius: 20px;
+        color: black;
+        transition: all .6s ease-in-out;
+        overflow: auto;
+        font-size: 20px;
+        height: 90%;
+    }
+    #aboutC, #goalC, #skillsC,#contactC{
+        display: none;
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        background-color: rgba(6, 61, 62, 0.2);
+        border-radius: 20px;
+        color: white;
+        transition: all .6s ease-in-out;
+        overflow: auto;
+        font-size: 20px;
+        height: 90%;
+    }
+    #logo{
+        padding-top: 5.5em;
+        width: 70%;
+    }
+    #skillsD ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+    #skillsD li{
+        width: 80%;
+    }
+    #skillsC ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+    #skillsC li{
+        width: 80%;
     }
 }

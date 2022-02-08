@@ -186,6 +186,8 @@ const goalText = document.querySelector("#goalD");
 const skillsText = document.querySelector("#skillsD");
 const experienceText = document.querySelector("#experienceD");
 const contactText = document.querySelector("#contactD");
+const logoSite = document.querySelector("#logo");
+let x = window.matchMedia("(max-width: 1300px)");
 
 const aboutButtonD = document.querySelector("#darkButton1");
 aboutButtonD.addEventListener("click", function()
@@ -198,6 +200,10 @@ aboutButtonD.addEventListener("click", function()
         darkTextH1.style.display = "none";
         backButtonD.style.display = "flex";
         aboutText.style.display = "flex";
+        if(x.matches)
+        {
+            logoSite.style.width = "20%";
+        }
     }
 );
 
@@ -212,6 +218,10 @@ goalButtonD.addEventListener("click", function()
         darkTextH1.style.display = "none";
         backButtonD.style.display = "flex";
         goalText.style.display = "flex";
+        if(x.matches)
+        {
+            logoSite.style.width = "20%";
+        }
     }
 );
 
@@ -226,6 +236,10 @@ skillsButtonD.addEventListener("click", function()
         darkTextH1.style.display = "none";
         backButtonD.style.display = "flex";
         skillsText.style.display = "flex";
+        if(x.matches)
+        {
+            logoSite.style.width = "20%";
+        }
     }
 );
 
@@ -240,6 +254,10 @@ experienceButtonD.addEventListener("click", function()
         darkTextH1.style.display = "none";
         backButtonD.style.display = "flex";
         experienceText.style.display = "flex";
+        if(x.matches)
+        {
+            logoSite.style.width = "20%";
+        }
     }
 );
 
@@ -254,6 +272,10 @@ contactButtonD.addEventListener("click", function()
         darkTextH1.style.display = "none";
         backButtonD.style.display = "flex";
         contactText.style.display = "flex";
+        if(x.matches)
+        {
+            logoSite.style.width = "20%";
+        }
     }
 );
 
@@ -272,6 +294,7 @@ backButtonD.addEventListener("click", function()
         skillsText.style.display = "none";
         experienceText.style.display = "none";
         contactText.style.display = "none";
+        logoSite.style.width = "100%";
     }
 );
 
