@@ -468,7 +468,7 @@ img:hover{
         align-items: flex-end;
     }
     #mode{
-        width: 8%;
+        width: 6%;
     }
     #aboutD, #goalD, #skillsD,#contactD{
         display: none;
@@ -552,6 +552,12 @@ img:hover{
         display: flex;
         height: 65%;
     }
+    #experienceD{
+        font-size: 20px;
+    }
+    #experienceC{
+        font-size: 20px;
+    }
 
     footer{
         display: flex;
@@ -618,5 +624,100 @@ img:hover{
     }
     #skillsC li{
         width: 80%;
+    }
+}
+
+@media all and (max-width: 1230px){
+    #darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5, #darkButton6, #darkButton7{
+        font-size: 20px;
+    }
+    #clearButton1, #clearButton2, #clearButton3, #clearButton4, #clearButton5, #clearButton6, #clearButton7{
+        font-size: 20px;
+    }
+    #experienceD{
+        font-size: 20px;
+    }
+    #experiencec{
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 1050px){
+    #darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5, #darkButton6, #darkButton7{
+        font-size: 18px;
+    }
+    #clearButton1, #clearButton2, #clearButton3, #clearButton4, #clearButton5, #clearButton6, #clearButton7{
+        font-size: 18px;
+    }
+    #experienceD{
+        font-size: 18px;
+    }
+    #aboutD{
+        font-size: 18px;
+    }
+    #experienceC{
+        font-size: 18px;
+    }
+    #aboutC{
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 990px){
+    #darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5, #darkButton6, #darkButton7{
+        font-size: 15px;
+    }
+    #clearButton1, #clearButton2, #clearButton3, #clearButton4, #clearButton5, #clearButton6, #clearButton7{
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 840px){
+    #darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5, #darkButton6, #darkButton7{
+        font-size: 12px;
+    }
+    #clearButton1, #clearButton2, #clearButton3, #clearButton4, #clearButton5, #clearButton6, #clearButton7{
+        font-size: 12px;
+    }
+    #aboutD{
+        font-size: 15px;
+    }
+    #aboutC{
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 750px){
+    #darkH1{
+        font-size: 45px;
+    }
+    #clearH1{
+        font-size: 45px;
+    }
+}
+
+@media all and (max-width: 700px){
+    #darkH1{
+        font-size: 40px;
+        letter-spacing: -6px;
+    }
+    #clearH1{
+        font-size: 40px;
+        letter-spacing: -6px;
+    }
+    #darkButton1, #darkButton2, #darkButton3, #darkButton4, #darkButton5, #darkButton6, #darkButton7{
+        font-size: 10px;
+    }
+    #clearButton1, #clearButton2, #clearButton3, #clearButton4, #clearButton5, #clearButton6, #clearButton7{
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 630px){
+    #darkH1{
+        display: none;
+    }
+    #clearH1{
+        display: none;
     }
 }
