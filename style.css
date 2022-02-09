@@ -601,7 +601,6 @@ img:hover{
     }
     #logo{
         padding-top: 5.5em;
-        width: 70%;
     }
     #skillsD ul{
         display: flex;
@@ -758,9 +757,10 @@ img:hover{
         padding: 0.5em;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        height: 100%;
     }
     #logo{
-        height: 120%;
         padding-bottom: 2em;
     }
     main{
@@ -785,5 +785,154 @@ img:hover{
     #mode{
         height: 75%;
         width: 20%;
+    }
+    @media all and (max-height: 700px){
+        #logo{
+            width: 130px;
+            height: 220px;
+        }
+    }
+}
+
+@media all and (max-width: 600px){
+    #experienceD{
+        font-size: 12px;
+    }
+    #aboutD{
+        font-size: 15px;
+    }
+    #goalD{
+        font-size: 18px;
+    }
+    #skillsD{
+        font-size: 15px;
+    }
+
+    #experienceC{
+        font-size: 12px;
+    }
+    #aboutC{
+        font-size: 15px;
+    }
+    #goalC{
+        font-size: 18px;
+    }
+    #skillsC{
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 560px){
+    #skillsD{
+        font-size: 12px;
+    }
+    #skillsC{
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 540px){
+    #skillsD{
+        font-size: 10px;
+    }
+    #skillsC{
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 520px){
+    #skillsD{
+        font-size: 8px;
+    }
+    #skillsC{
+        font-size: 8px;
+    }
+}
+
+@media all and (max-width: 505px){
+    #skillsD li{
+        width: 70%;
+        font-size: 12px;
+    }
+    #skillsC li{
+        width: 70%;
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 468px){
+    #skillsD{
+        height: 60%;
+    }
+    #skillsC{
+        height: 60%;
+    }
+    #skillsD li{
+        width: 70%;
+        font-size: 10px;
+    }
+    #skillsC li{
+        width: 70%;
+        font-size: 10px;
+    }
+    #aboutD{
+        font-size: 12px;
+    }
+    #aboutC{
+        font-size: 12px;
+    }
+
+    #experienceD{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #experienceC{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 420px){
+    #experienceD{
+        font-size: 10px;
+    }
+    #experienceC{
+        font-size: 10px;
+    }
+    #mode{
+        height: 45%;
+    }
+    #skillsD{
+        font-size: 10px;
+        height: 50%;
+    }
+    #skillsD li{
+        font-size: 12px;
+        width: 100%;
+    }
+    #skillsC{
+        font-size: 10px;
+        height: 50%;
+    }
+    #skillsC li{
+        font-size: 12px;
+        width: 100%;
+    }
+    #logo{
+        height: 220px;
+        width: 130px;
+    }
+    #contactD{
+        height: 60%;
+    }
+    #email{
+        width: 15%;
+    }
+    #linkedin{
+        width: 30%;
     }
 }

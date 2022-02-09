@@ -350,7 +350,8 @@ backButtonD.addEventListener("click", function()
             header.style.height = "75%";
             footer.style.height = "25%";
             logoSite.style.display = "flex";
-            logoSite.style.height = "120%";
+            logoSite.style.width = "130px";
+            logoSite.style.height = "220px";
             modeImage.style.width = "20%";
         }
     }
