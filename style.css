@@ -1,8 +1,8 @@
 /*Font*/
 @font-face {
     font-family : "Numans";
-    src : url("/fonts/Numans-Regular.woff"),
-    url("/fonts/Numans-Regular.woff2");
+    src : url("fonts/Numans-Regular.woff"),
+    url("fonts/Numans-Regular.woff2");
     font-weight : normal;
     font-style : normal;
 }
@@ -14,7 +14,6 @@
     box-sizing: border-box;
     overflow: hidden;
     font-family: "Numans";
-    color: grey;
 }
 
 /*background color*/
@@ -411,6 +410,7 @@ img:hover{
 
 #linkedin{
     width: 10%;
+    transition: all .2s ease-in-out;
 }
 
 #email{
@@ -788,11 +788,9 @@ img:hover{
         height: 75%;
         width: 20%;
     }
-    @media all and (max-height: 700px){
-        #logo{
-            width: 130px;
-            height: 220px;
-        }
+    #logo{
+        width: 130px;
+        height: 220px;
     }
 }
 
