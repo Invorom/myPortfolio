@@ -2,5 +2,5 @@
  Creation of a portfolio website to present my resume
 
 [X] html code
-[] css code
+[X] css code
 [X] javascript code
